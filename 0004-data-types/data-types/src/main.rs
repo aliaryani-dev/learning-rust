@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    // integers
+    let _a:u8 = 255;
 }
