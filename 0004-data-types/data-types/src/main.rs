@@ -10,4 +10,8 @@ fn main() {
     let (x, y, z) = tup;
     println!("x: {} | y: {}, z: {}", x,y,z);
     println!("tup.1: {}", tup.0);
+    // arrays
+    let arr = [1, 2, 3, 4, 5];
+    // accessing array elements
+    println!("array items: {} {} {} {} {}",arr[0],arr[1],arr[2],arr[3],arr[4]);
 }
