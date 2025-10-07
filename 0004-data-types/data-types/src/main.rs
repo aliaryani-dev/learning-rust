@@ -9,4 +9,5 @@ fn main() {
     let tup: (i32,f64,u8) = (12,3.4,5);
     let (x, y, z) = tup;
     println!("x: {} | y: {}, z: {}", x,y,z);
+    println!("tup.1: {}", tup.0);
 }
