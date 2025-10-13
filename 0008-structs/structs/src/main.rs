@@ -6,6 +6,9 @@ struct User {
     active: bool
 }
 
+// tuple structs
+struct Color(i32, i32, i32);
+
 fn build_user (email:String, username:String) -> User {
     User {
         active: true,
@@ -30,4 +33,8 @@ fn main() {
         ..user1
     };
     println!("user2: username: {}, active state: {}, email: {}",user2.username,user2.active,user2.email);
+
+    // declare tuple struct instance
+    let black = Color(0,0,0);
+    println!("black: ({},{},{})",black.0,black.1,black.2);
 }
