@@ -6,13 +6,17 @@ struct User {
     active: bool
 }
 
-fn main() {
-    let mut user1 = User {
-        email: String::from("lenesis@proton.me"),
-        username: String::from("aliaryani-dev"),
+fn build_user (email:String, username:String) -> User {
+    User {
         active: true,
+        username: username,
+        email: email,
         sign_in_count: 1,
-    };
+    }
+}
+
+fn main() {
+    let mut user1 = build_user(String::from("lenesis@proton.me"), String::from("aliaryani-dev"));
     
     user1.username = String::from("aliaryani.dev");
     println!("user1's email: {}",user1.email);
