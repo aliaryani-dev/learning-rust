@@ -23,4 +23,11 @@ fn main() {
     if user1.active {
         println!("sign-in count: {}",user1.sign_in_count);
     }
+
+    // struct update syntax
+    let user2 = User {
+        email: String::from("example@mail.com"),
+        ..user1
+    };
+    println!("user2: username: {}, active state: {}, email: {}",user2.username,user2.active,user2.email);
 }
