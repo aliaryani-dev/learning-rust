@@ -7,5 +7,10 @@ struct User {
 }
 
 fn main() {
-    println!("Hello World");
+    let user1 = User {
+        email: String::from("lenesis@proton.me"),
+        username: String::from("aliaryani-dev"),
+        active: true,
+        sign_in_count: 1,
+    };
 }
