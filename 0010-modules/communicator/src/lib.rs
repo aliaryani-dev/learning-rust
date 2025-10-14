@@ -1,3 +1,14 @@
+mod network {
+    fn connect() {
+        
+    }
+    mod client {
+        fn connect() {
+
+        }
+    }
+}
+
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
