@@ -1,1 +1,1 @@
-fn exmpl() {}
+mod server;
